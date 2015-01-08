@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
 
-app.set('port', (process.env.PORT || 3000))
 mongoose.connect('mongodb://gokerayi:pastor01@ds031561.mongolab.com:31561/valentine');
 
 var db = mongoose.connection;
@@ -31,7 +30,5 @@ var GiftSchema = new Schema({
   }
 
 }); 
-app.listen(app.get('port'), function() {
-  console.log("Node is working)
 
 module.exports = mongoose.model('Gift', GiftSchema);
