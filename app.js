@@ -5,5 +5,5 @@ app.use('/api', gift);
 
 
 app.listen(3000, function(){
- console.log('How far');
+ console.log('Server Started');
 });
