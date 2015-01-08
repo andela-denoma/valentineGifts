@@ -9,7 +9,7 @@ var Gift = require('../model/gifts');
 
 router.route('/')
   .get(function(req, res) {
-    req.redirect('/api/users/gifts');
+    res.redirect('/users/gifts');
   });
 
 router.route('/users/gifts')
