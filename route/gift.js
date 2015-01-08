@@ -7,6 +7,11 @@ router.use(bodyParser.json());
 
 var Gift = require('../model/gifts');
 
+router.route('/')
+  .get(function(req, res) {
+    req.redirect('/api/users/gifts');
+  });
+
 router.route('/users/gifts')
 
 .post(function(req, res){
