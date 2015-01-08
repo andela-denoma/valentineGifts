@@ -1,0 +1,61 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 warn package.json valentineGifts@1.0.0 No README data
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/home/gbolly/Desktop/valentineGifts',
+6 verbose install   [ 'express', 'body-parser', 'mongoose' ] ]
+7 info preinstall valentineGifts@1.0.0
+8 verbose readDependencies using package.json deps
+9 verbose already installed skipping express@~4.0.0 /home/gbolly/Desktop/valentineGifts
+10 verbose already installed skipping body-parser@~1.0.1 /home/gbolly/Desktop/valentineGifts
+11 verbose cache add [ 'mongoose@~3.6.13', null ]
+12 verbose cache add name=undefined spec="mongoose@~3.6.13" args=["mongoose@~3.6.13",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'mongoose@~3.6.13',
+13 verbose parsed url   path: 'mongoose@~3.6.13',
+13 verbose parsed url   href: 'mongoose@~3.6.13' }
+14 verbose cache add name="mongoose" spec="~3.6.13" args=["mongoose","~3.6.13"]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: '~3.6.13',
+15 verbose parsed url   path: '~3.6.13',
+15 verbose parsed url   href: '~3.6.13' }
+16 verbose addNamed [ 'mongoose', '~3.6.13' ]
+17 verbose addNamed [ null, '>=3.6.13-0 <3.7.0-0' ]
+18 silly lockFile 146b604b-mongoose-3-6-13 mongoose@~3.6.13
+19 verbose lock mongoose@~3.6.13 /home/gbolly/.npm/146b604b-mongoose-3-6-13.lock
+20 silly lockFile 146b604b-mongoose-3-6-13 mongoose@~3.6.13
+21 error Error: Attempt to unlock mongoose@~3.6.13, which hasn't been locked
+21 error     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:44:11)
+21 error     at cb (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:32:5)
+21 error     at /usr/local/lib/node_modules/npm/lib/cache/add-named.js:41:20
+21 error     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:30:7
+21 error     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+21 error     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+21 error     at Object.oncomplete (fs.js:108:15)
+22 error If you need help, you may report this *entire* log,
+22 error including the npm and node versions, at:
+22 error     <http://github.com/npm/npm/issues>
+23 error System Linux 3.13.0-37-generic
+24 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+25 error cwd /home/gbolly/Desktop/valentineGifts
+26 error node -v v0.10.35
+27 error npm -v 1.4.28
+28 verbose exit [ 1, true ]
