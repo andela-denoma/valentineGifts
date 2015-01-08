@@ -82,10 +82,12 @@ router.route('/users/gifts/:gifts_id')
       sin_gift.description= req.body.description;
       sin_gift.price= req.body.price;
 
-    if(err){
+    sin_gift.save(function (err){
+      if(err){
       res.send(err);
-    }
-    res.json(sin_gift);
+      }
+      res.json(sin_gift);
+    });
   });
 })
 
