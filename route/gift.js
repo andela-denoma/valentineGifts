@@ -15,6 +15,7 @@ router.route('/')
 router.route('/users/gifts')
 
 .post(function(req, res){
+  res.redirect('/users/gifts');
   console.log(req.body);
   var gift = new Gift({
     name: req.body.name,
@@ -66,18 +67,18 @@ router.route('/users/gifts/:gifts_id')
       res.json(sin_gift);
     });
   });
-})
-
-.delete(function(req, res) {
-  Gift.findById(req.params.gifts_id, function(err, sin_gift){
-    sin_gift.remove(function(err) {
-
-      if(err){
-        res.send(err);
-      }
-      res.json('Document Deleted');
-    });
-  });
 });
+
+// .delete(function(req, res) {
+//   Gift.findById(req.params.gifts_id, function(err, sin_gift){
+//     sin_gift.remove(function(err) {
+
+//       if(err){
+//         res.send(err);
+//       }
+//       res.json('Document Deleted');
+//     });
+//   });
+// });
 
 module.exports = router;
