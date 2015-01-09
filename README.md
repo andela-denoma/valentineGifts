@@ -20,7 +20,7 @@ Make sure you have installed all these prerequisites on your development machine
 * Bower - You're going to use the [Bower Package Manager](http://bower.io/) to manage your front-end packages, in order to install it make sure you've installed Node.js and npm, then install bower globally using npm:
 
 ## Live Example
-Browse the live valentine gift app on [https://peaceful-tor-3223.herokuapp.com](https://peaceful-tor-3223.herokuapp.com).
+Browse the live valentine gift app on [https://valentine-gift.herokuapp.com/users/gifts](https://valentine-gift.herokuapp.com/users/gifts).
 
 ##API
 The valentine gift API is a REST API that returns format for all endpoints in JSON.
@@ -41,7 +41,7 @@ To post a gift
 
 POST /users/gift
 
-To Edit or Put a single gift
+To edit or put a single gift
 
 PUT /users/gifts/:gifts_id
 
