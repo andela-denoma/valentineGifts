@@ -15,7 +15,6 @@ router.route('/')
 router.route('/users/gifts')
 
 .post(function(req, res){
-  res.redirect('/users/gifts');
   console.log(req.body);
   var gift = new Gift({
     name: req.body.name,
