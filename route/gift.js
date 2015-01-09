@@ -1,3 +1,9 @@
+//BASE SETUP
+//=========================================================
+
+
+//call the packages we need
+
 var express= require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
@@ -9,13 +15,13 @@ var Gift = require('../model/gifts');
 
 router.route('/')
   .get(function(req, res) {
+
     res.redirect('/users/gifts');
   });
 
 router.route('/users/gifts')
 
 .post(function(req, res){
-  res.redirect('/users/gifts');
     console.log(req.body);
     var gift = new Gift({
       name: req.body.name,
@@ -33,6 +39,14 @@ router.route('/users/gifts')
 })
 
 .get(function(req, res){
+
+  Gift.find({}, 'name description price -_id', function (err, all_gift) {
+     if(err){
+       return handleError(err);
+     }
+     res.json(all_gift);
+   });
+
   Gift.find(function(err, all_gift){
 
     if(err){
