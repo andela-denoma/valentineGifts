@@ -51,23 +51,24 @@ router.route('/users/gifts')
 
 // get all the gifts
 
-.get(function(req, res){
+ .get(function(req, res){
 
-  // Gift.find(function(err, all_gift){
+  Gift.find(function(err, all_gift){
 
-  //   if(err){
-  //     res.send(err);
-  //   }
-  //   res.json(all_gift);
-  // });
-  //removes the -v and _id that comes by default when a gift is created
-  Gift.find({}, 'name description price -_id', function (err, all_gift) {
-     if(err){
-       return handleError(err);
-     }
-     res.json(all_gift);
-   });
+    if(err){
+      res.send(err);
+    }
+    res.json(all_gift);
+  });
 });
+  //removes the -v and _id that comes by default when a gift is created
+//   Gift.find({}, 'name description price -_id', function (err, all_gift) {
+//      if(err){
+//        return handleError(err);
+//      }
+//      res.json(all_gift);
+//    });
+// });
 
 // on routes that end in /gifts/:gifts_id
 // ----------------------------------------------------
