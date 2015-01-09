@@ -1,6 +1,8 @@
-> A valentine gift app with Express js, Node js, MongoDb and Angular js
+VALENTINE GIFTS APP
 
-This is an example of acreate, read, update, delete web application built with Express.js v~4.0.0, and Mongoose v~3.6.13 
+A valentine gift app with Express js, Node js, MongoDb and Angular js
+
+This is an example of a create, read, update, delete web application built with Express.js v~4.0.0, and Mongoose v~3.6.13 
 
 The full source code is available at [github.com/andela-denoma/valentineGifts](https://github.com/andela-denoma/valentineGifts).
 
@@ -20,6 +22,25 @@ Make sure you have installed all these prerequisites on your development machine
 ## Live Example
 Browse the live valentine gift app on [https://peaceful-tor-3223.herokuapp.com](https://peaceful-tor-3223.herokuapp.com).
 
+##API
+The valentine gift API is a REST API that returns format for all endpoints in JSON.
+
+##Api Endpoints
+
+Gift Resources
+
+To get all gifts
+GET [https://peaceful-tor-3223.herokuapp.com/users/gifts]
+
+To get a single gift by ID
+GET [https://peaceful-tor-3223.herokuapp.com/users/gifts/:gifts_id]
+  
+To post a gift
+POST [https://peaceful-tor-3223.herokuapp.com/users/gift]
+
+To Edit or Put a single gift
+PUT [https://peaceful-tor-3223.herokuapp.com/users/gifts/:gifts_id]
+
 #Creators
-Enoma Deborah(enomadeborah@andela.co)
+Enoma Deborah(enomadeborah@andela.co) and 
 Gbolahan Okerayi(gbolahan.okerayi@andela.co)
