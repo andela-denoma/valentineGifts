@@ -30,15 +30,19 @@ The valentine gift API is a REST API that returns format for all endpoints in JS
 Gift Resources
 
 To get all gifts
+
 GET /users/gifts
 
 To get a single gift by ID
+
 GET /users/gifts/:gifts_id
   
 To post a gift
+
 POST /users/gift
 
 To Edit or Put a single gift
+
 PUT /users/gifts/:gifts_id
 
 #Creators
