@@ -15,11 +15,12 @@ router.route('/')
 router.route('/users/gifts')
 
 .post(function(req, res){
-  console.log(req.body);
-  var gift = new Gift({
-    name: req.body.name,
-    description: req.body.description,
-    price: req.body.price
+  res.redirect('/users/gifts');
+    console.log(req.body);
+    var gift = new Gift({
+      name: req.body.name,
+      description: req.body.description,
+      price: req.body.price
   });
 
   gift.save(function(err){
