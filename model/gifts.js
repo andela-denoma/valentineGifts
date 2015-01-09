@@ -1,6 +1,6 @@
-var mongoose = require('mongoose');
+var mongoose = require('mongoose'); //call mongoose
 
-mongoose.connect('mongodb://gokerayi:pastor01@ds031561.mongolab.com:31561/valentine');
+mongoose.connect('mongodb://gokerayi:pastor01@ds031561.mongolab.com:31561/valentine');  // connect to our database
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
