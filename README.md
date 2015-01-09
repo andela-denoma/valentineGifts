@@ -30,16 +30,16 @@ The valentine gift API is a REST API that returns format for all endpoints in JS
 Gift Resources
 
 To get all gifts
-GET [https://peaceful-tor-3223.herokuapp.com/users/gifts]
+GET /users/gifts
 
 To get a single gift by ID
-GET [https://peaceful-tor-3223.herokuapp.com/users/gifts/:gifts_id]
+GET /users/gifts/:gifts_id
   
 To post a gift
-POST [https://peaceful-tor-3223.herokuapp.com/users/gift]
+POST /users/gift
 
 To Edit or Put a single gift
-PUT [https://peaceful-tor-3223.herokuapp.com/users/gifts/:gifts_id]
+PUT /users/gifts/:gifts_id
 
 #Creators
 Enoma Deborah(enomadeborah@andela.co) and 
